@@ -6,11 +6,15 @@
 
 body {
     margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+}
+
+.container {
     display: flex;
+    background: #5d76c7;
+    margin: 0 auto;
+    width: 485px;
+    padding: 1em;
+    border-radius: 1em;
     flex-direction: column;
 }
 
@@ -35,11 +39,9 @@ textarea {
     width: 300px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid #999;
+    border: 3px solid #999;
     vertical-align: top;
-    /* height: 5em; */
     resize: vertical;
-    margin: 3px;
 }
 
 input:focus,
@@ -48,11 +50,14 @@ textarea:focus {
 }
 
 .button {
-    padding-left: 90px;
     display: flex;
     justify-content: center;
 }
 
 button {
     margin-left: .5em;
+}
+
+button:hover {
+    color: rgb(124, 103, 243);
 }

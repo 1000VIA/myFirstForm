@@ -10,26 +10,31 @@
 </head>
 
 <body>
-    <h3>Mi primer formulario</h3>
-    <form action="/my-handling-form-page" method="POST"></form>
     <div>
-        <label for="name">Nombre:</label>
-        <input type="text" name="name" id="user_name">
+        <h3>Mi primer formulario</h3>
+    </div>
+    <div class="container">
+        <form class="color" action="/my-handling-form-page" method="POST"></form>
+        <div>
+            <label for="name"> <b>Nombre:</b> </label>
+            <input type="text" name="name" id="user_name">
+        </div>
+
+        <div>
+            <label for="mail"><b>Correo</b>:</label>
+            <input type="email" name="user_email" id="mail">
+        </div>
+
+        <div>
+            <label for="msg"><b>Mensaje</b>:</label>
+            <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit"><b>Enviar Mensaje</b></button>
+        </div>
     </div>
 
-    <div>
-        <label for="mail">Correo:</label>
-        <input type="email" name="user_email" id="mail">
-    </div>
-
-    <div>
-        <label for="msg">Mensaje:</label>
-        <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
-    </div>
-
-    <div class="button">
-        <button type="submit">Enviar Mensaje</button>
-    </div>
 </body>
 
 </html>
